@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nova Dental Lab - الدفع</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Tahoma",sans-serif;background:#f4f8fc;color:#17324d;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}.card{width:min(430px,100%);background:#fff;border-radius:22px;padding:28px 22px;box-shadow:0 10px 35px #17324d20;text-align:center;border:1px solid #e7eef5}.logo{width:64px;height:64px;margin:auto;border-radius:18px;background:#1677d2;color:white;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700}.brand{font-size:25px;font-weight:800;margin-top:14px}.sub{color:#718397;margin:6px 0 24px}.label{font-size:15px;color:#66798c;margin-bottom:8px}.number{direction:ltr;font-size:27px;font-weight:800;letter-spacing:1px;background:#f3f7fb;border-radius:14px;padding:14px;margin-bottom:10px}.copy{border:0;background:#1677d2;color:#fff;border-radius:12px;padding:11px 20px;font-size:16px;font-weight:700;cursor:pointer}.methods{margin-top:24px;text-align:right}.method{padding:14px;border-radius:14px;background:#f7fafc;margin-top:10px;font-size:16px}.notice{margin-top:18px;background:#fff8e8;border:1px solid #f2dfac;border-radius:13px;padding:13px;color:#765b18;font-size:14px;line-height:1.7}.footer{margin-top:22px;color:#8b9aaa;font-size:13px}@media(max-width:360px){.brand{font-size:22px}.number{font-size:23px}}
+</style>
+</head>
+<body>
+<main class="card">
+<div class="logo">N</div>
+<div class="brand">Nova Dental Lab</div>
+<div class="sub">معمل نوفا لاب لطب الأسنان</div>
+<div class="label">رقم التحويل</div>
+<div class="number" id="num">01011645139</div>
+<button class="copy" onclick="copyNumber()">نسخ الرقم</button>
+<section class="methods">
+<div class="method">🟣 يمكن التحويل عن طريق <b>فودافون كاش</b></div>
+<div class="method">🔵 يمكن التحويل عن طريق <b>إنستا باي</b></div>
+</section>
+<div class="notice">⚠️ برجاء التأكد من اسم المستلم قبل التحويل.</div>
+<div class="footer">شكراً لتعاملكم مع Nova Dental Lab</div>
+</main>
+<script>
+function copyNumber(){const n=document.getElementById('num').textContent.trim();navigator.clipboard?.writeText(n).then(()=>{event.target.textContent='تم النسخ ✓';setTimeout(()=>event.target.textContent='نسخ الرقم',1500)}).catch(()=>alert('رقم التحويل: '+n));}
+</script>
+</body>
+</html>
